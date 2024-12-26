@@ -1,14 +1,14 @@
 backend:
   name: git-gateway
-  branch: main # Replace with your branch name if not 'main'
+  branch: main # The branch in your GitHub repo (use 'main' unless it's different)
 
-media_folder: "images/uploads" # Folder for uploaded images
-public_folder: "/images/uploads"
+media_folder: "images/uploads" # Folder where uploaded images will be stored
+public_folder: "/images/uploads" # Public path to uploaded images
 
 collections:
   - name: "pages"
     label: "Pages"
-    folder: "content/pages" # Replace with your content folder
+    folder: "content/pages" # Folder for storing page content
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
